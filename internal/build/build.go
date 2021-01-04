@@ -16,7 +16,7 @@ import (
 	"github.com/urfave/cli/v2"
 )
 
-var packages = []string{"cli", "altsrc"}
+var packages = []string{"cli", "altx"}
 
 func main() {
 	app := cli.NewApp()
@@ -198,7 +198,7 @@ func checkBinarySizeActionFunc(c *cli.Context) (err error) {
 		badNewsEmoji         = "🚨"
 		goodNewsEmoji        = "✨"
 		checksPassedEmoji    = "✅"
-		mbStringFormatter    = "%.1fMB"
+		mbStringFormatter    = "%.3fMB"
 	)
 
 	// get cli example size
